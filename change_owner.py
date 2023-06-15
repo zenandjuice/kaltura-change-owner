@@ -10,7 +10,7 @@ def main():
     for entry in entry_list:
         entry_id, userId = entry.split("\t")
         base_entry = KalturaBaseEntry()
-        base_entry.userId = userId
+        base_entry.userId = userId.strip()
         change_owner(client, entry_id, base_entry)
 
     entry_list.close()
