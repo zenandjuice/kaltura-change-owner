@@ -22,7 +22,7 @@ def change_owner(client, entry_id, userId):
         print(entry_id,"owner changed");
 
     except Exception as e:
-    	print(e)
+    	print(entry_id,"not found")
 
 
 def get_client():
